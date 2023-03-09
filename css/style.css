@@ -6,6 +6,13 @@
  }
 
  body {
-    background-color: #1B1426;
     color: white;
  }
+
+ /* mobile first */
+
+ header {
+    background-color: #1B1426;
+ }
+
+ 
