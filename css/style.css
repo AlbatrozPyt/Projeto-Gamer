@@ -1,0 +1,11 @@
+ /* RESET CSS */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: #1B1426;
+    color: white;
+ }
