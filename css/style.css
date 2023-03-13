@@ -1,3 +1,9 @@
+ /* Importando Fontes */
+ @font-face {
+  font-family: 'Inter';
+  src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+ }
+ 
  /* RESET CSS */
  * {
     margin: 0;
@@ -9,14 +15,14 @@
     color: white;
  }
 
- /* Mobile First */
-
+ /* Classes genericas */
  .layout-grid {
    width: 90%;
    height: 100%;
    margin: 0 auto;
-   border: 1px solid aqua;
  }
+
+ /* Mobile First */
 
  .alinhamento-between-center{
    display: flex;
@@ -44,17 +50,53 @@ header .header-bottom {
    width: 86px;
  }
 
- header nav {
+ header .header-bottom nav {
    position: fixed;
    top: 60px;
    left: 0;
-   height: 100vh;
+   height: calc(100vh - 60px); /* 100% da altura da viewport, menos 60px do top */
    width: 80vw;
-   background-color: red;
-
+   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+   backdrop-filter: blur(45px);
+  
    display: flex;
    flex-direction: column;
+   
+   padding-bottom: 20px;
  }
+
+header .header-bottom nav > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  padding: 30px 0;
+
+  border-bottom: 2px solid #F9AA01;
+  color: white;
+
+  font-size: 15px;
+  font-family: Inter;
+  text-decoration: none;
+}
+
+header .header-bottom nav a:last-of-type {
+  border-bottom: none;
+}
+
+header .header-bottom nav .midias-sociais {
+position: absolute;
+bottom: 20px;
+left: 0;
+width: 100%;
+
+  display: flex;
+  justify-content: center;
+  
+  gap: 20px;
+
+  text-decoration: none;
+}
 
  header .menu-usuarios {
    display: none;
