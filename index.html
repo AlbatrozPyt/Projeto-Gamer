@@ -48,14 +48,16 @@
         <div class="header-bottom">
 
             <div class="layout-grid alinhamento-between-center">
-                <img src="assets/icons/menu-hmburguer.svg"
+
+                <!-- Menu-Hamburguer -->
+                <img onclick="mostrarMenu()" src="assets/icons/menu-hmburguer.svg"
                     alt="Ícone de telefone. Abre e fecha o menu pricipal, no celular">
 
 
                 <img class="logo" src="assets/icons/logotipo-gamer.svg"
                     alt="Imagem logotipo gamer com um controle de videogame ao centro">
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
@@ -91,7 +93,7 @@
                     </div>
                 </nav>
 
-
+                <!-- Menu de 3 pontinhos -->
                 <img src="assets/icons/menu-pointer.svg"
                     alt="ícone de 3 pontinhos, menu abre e fecha o menu de usuarios">
 
@@ -113,6 +115,12 @@
             </div>
         </div>
     </header>
+
+    <script>
+        function mostrarMenu() {
+           document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+    </script>
 </body>
 
 </html>

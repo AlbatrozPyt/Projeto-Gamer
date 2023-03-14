@@ -22,6 +22,10 @@
    margin: 0 auto;
  }
 
+.mostrar-menu {
+  left: 0 !important;
+}
+
  /* Mobile First */
 
  .alinhamento-between-center{
@@ -32,6 +36,10 @@
 
  /* HEADER */
  header {
+    position: fixed;
+    z-index: 100;
+
+    width: 100vw;
     background-color: #1B1426;
     height: 60px;
  }
@@ -53,7 +61,9 @@ header .header-bottom {
  header .header-bottom nav {
    position: fixed;
    top: 60px;
-   left: 0;
+   left: -80vw;
+   z-index: 101;
+
    height: calc(100vh - 60px); /* 100% da altura da viewport, menos 60px do top */
    width: 80vw;
    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
@@ -61,8 +71,9 @@ header .header-bottom {
   
    display: flex;
    flex-direction: column;
-   
    padding-bottom: 20px;
+
+   transition: left .4s;
  }
 
 header .header-bottom nav > a {
