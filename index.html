@@ -81,24 +81,23 @@
                         <a href="https://Facebook.com">
                             <img src="assets/icons/facebook.svg" alt="Imagem do link do Facebook da empresa">
                         </a>
-    
+
                         <a href="https://Linkedin.com">
                             <img src="assets/icons/linkedin.svg" alt="Imagem do link do Linkedin da empresa">
                         </a>
-    
+
                         <a href="https://Instagram.com">
                             <img src="assets/icons/instagram.svg" alt="Imagem do link do Instagram da empresa">
                         </a>
-    
+
                     </div>
                 </nav>
 
                 <!-- Menu de 3 pontinhos -->
-                <img src="assets/icons/menu-pointer.svg"
+                <img onclick="mostrarMenu2()" src="assets/icons/menu-pointer.svg"
                     alt="ícone de 3 pontinhos, menu abre e fecha o menu de usuarios">
 
-                <div class="menu-usuarios">
-
+                <div class="menu-usuarios" id="menu-usuarios">
                     <a href="">
                         <img src="assets/icons/conta.svg" alt="Ícone de perfil">
                     </a>
@@ -116,9 +115,21 @@
         </div>
     </header>
 
+    <main>
+        <article class="home">
+            <div class="flex">
+                <h1>Liga gamers</h1>
+            </div>
+        </article>
+    </main>
+
     <script>
         function mostrarMenu() {
-           document.getElementById("menu").classList.toggle("mostrar-menu")
+            document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+
+        function mostrarMenu2() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-menu-2")
         }
     </script>
 </body>
