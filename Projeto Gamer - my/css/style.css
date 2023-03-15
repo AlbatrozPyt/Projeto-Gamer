@@ -1,189 +1,339 @@
   /* Importando Fontes */
- @font-face {
-   font-family: 'Inter';
-   src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
- }
+  @font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+  }
 
- @font-face {
-  font-family: 'Titillium-Web-Black';
-  src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
- }
+  @font-face {
+    font-family: 'Titillium-Web-Black';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+  }
 
- @font-face {
-  font-family: 'Titillium-Web-Bold';
-  src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf)
- }
+  @font-face {
+    font-family: 'Titillium-Web-Bold';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf)
+  }
 
- @font-face {
-  font-family: 'Quicksand';
-  src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
- }
- /* RESET CSS */
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
+  @font-face {
+    font-family: 'Quicksand';
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+  }
 
- body {
-   color: white;
- }
+  /* RESET CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
- /* Classes genericas */
- .layout-grid {
-   width: 90%;
-   height: 100%;
-   margin: 0 auto;
- }
+  body {
+    background-color: #1B1426;
+    color: white;
+  }
 
- /* Menu hamburguer aparece */
- .mostrar-menu {
-   left: 0 !important;
- }
+  /* Classes genericas */
+  .layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
 
- /* Menu usuarios aparece */
- .mostrar-menu-2 {
-  right: 0 !important;
- }
+  /* Menu hamburguer aparece */
+  .mostrar-menu {
+    left: 0 !important;
+  }
 
- /* Mobile First */
+  /* Menu usuarios aparece */
+  .mostrar-menu-2 {
+    right: 0 !important;
+  }
 
- .alinhamento-between-center {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
+  /* -----Mobile First----- */
 
- /* HEADER */
- header {
-   position: fixed;
-   z-index: 100;
+  .alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-   width: 100vw;
-   background-color: #1B1426;
-   height: 60px;
- }
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100vw;
+    background-color: #1B1426;
+    height: 60px;
+  }
 
 
 
- header .header-top {
-   display: none;
- }
+  header .header-top {
+    display: none;
+  }
 
- header .header-bottom {
-   height: 60px;
- }
+  header .header-bottom {
+    height: 60px;
+  }
 
- header .logo {
-   width: 86px;
- }
+  header .logo {
+    width: 86px;
+  }
 
- header .header-bottom nav {
-   position: fixed;
-   top: 60px;
-   left: -80vw;
-   z-index: 101;
+  header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    z-index: 101;
 
-   height: calc(100vh - 60px);
-   /* 100% da altura da viewport, menos 60px do top */
-   width: 80vw;
-   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
-   backdrop-filter: blur(45px);
+    height: calc(100vh - 60px);
+    /* 100% da altura da viewport, menos 60px do top */
+    width: 80vw;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
 
-   display: flex;
-   flex-direction: column;
-   padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 
-   transition: left .4s;
- }
+    transition: left .4s;
+  }
 
- header .header-bottom nav>a {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   padding: 30px 0;
+  header .header-bottom nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
 
-   border-bottom: 2px solid #F9AA01;
-   color: white;
+    border-bottom: 2px solid #F9AA01;
+    color: white;
 
-   font-size: 15px;
-   font-family: Inter;
-   text-decoration: none;
- }
+    font-size: 15px;
+    font-family: Inter;
+    text-decoration: none;
+  }
 
- header .header-bottom nav a:last-of-type {
-   border-bottom: none;
- }
+  header .header-bottom nav a:last-of-type {
+    border-bottom: none;
+  }
 
- header .header-bottom nav .midias-sociais {
-   position: absolute;
-   bottom: 20px;
-   left: 0;
-   width: 100%;
+  header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
 
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 
-   gap: 20px;
+    gap: 20px;
 
-   text-decoration: none;
- }
+    text-decoration: none;
+  }
 
- header .menu-usuarios {
-   position: fixed;
-   top: 60px;
-   right: -66px;
+  header .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -66px;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-   gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 
-   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
 
-   width: 66px;
-   height: 170px;
+    width: 66px;
+    height: 170px;
 
-   transition: right 0.4s;
- }
+    transition: right 0.4s;
+  }
 
- main .banner {
-  position: absolute;
-  top: 60px;
- 
+  /* MAIN */
+main {
+    margin-top: 60px;
+}
 
-  background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
-  background-repeat: no repeat;
-  background-size: cover;
+  main .banner {
+    background-image: url(../assets/images/background-banner-mobile.png);
+    background-repeat: no repeat;
+    background-size: cover;
 
-  width: 100%;
-  height: 606px;
- }
+    width: 100%;
+    height: 606px;
+  }
 
-main .banner .flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  main .banner .flex {
+    height: 503px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  main .banner .flex h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 40px;
+    font-weight: 100;
+    text-shadow: 0 0 7px #FF0404;
+  }
+
+  main .banner .flex a {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+    background-color: #F9AA01;
+
+    width: 203px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  main .destaques {
+    height: 588px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  main .destaques img {
+    width: 336px;
+    height: 189px;
+  }
+
+  main .progamer {
+    width: 100vw;
+    height: 1535px;
+    background-color: #F9AA01;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .progamer h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 258px;
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+
+  main .progamer .jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  main .progamer .jogos img {
+    height: 511px;
+  }
+
+  /* Card Jogos */
+  main .progamer .jogos .jogos-diferentes {
+    position: absolute;
+    right: 0;
+    width: 231px;
+    height: 300px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2),  rgba(122, 49, 236, .8));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .progamer .jogos .jogos-diferentes img {
+    width: 97px;
+    height: 97px;
+  }
+
+  main .progamer .jogos .jogos-diferentes h2 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
+
+    color: white;
+    text-transform: uppercase;
+  }
+
+  main .progamer .jogos .jogos-diferentes p {
+    font-family: 'Quicksand';
+    font-size: 13px;
+    text-align: justify;
+    width: 176px;
+  }
+
+  main .progamer .professores {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+  }
+
+  main .progamer .professores img {
+    height: 428px;
+  }
+
+/* Card Professores */
+  main .progamer .professores .card-professores {
+    position: absolute;
+    width: 231px;
+    height: 300px;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2),  rgba(122, 49, 236, .8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
-}
+  main .progamer .professores .card-professores img {
+    width: 97px;
+    height: 97px;
+  }
 
-main .banner .flex h1 {
-  font-family: 'Titillium-Web-Black';
-  font-size: 40px;
-  font-weight: 100;
-  text-shadow: 0 0 7px #FF0404;
-}
+  main .progamer .professores .card-professores h2 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
 
-main .banner .flex h2 {
-  font-family: 'Titillium-Web-Bold';
-  font-size: 24px;
-  text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
 
-  color: black;
-  background-color: #F9AA01;
-  width: 203px;
-  height: 40px;
-  border-radius: 8px;
-}
+  main .progamer .professores .card-professores p {
+    font-family: 'Quicksand';
+    font-size: 13px;
+    text-align: justify;
+    width: 176px;
+  }
+
+ /* -----TABLET----- */
+ @media screen and (min-width: 768px) {}
+
+  /* -----DESKTOP----- */
+  @media screen and (min-width: 1200px) {
+    .layout-grid {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* Elementos escondidos */
+  }
