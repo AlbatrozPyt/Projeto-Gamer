@@ -154,9 +154,9 @@
   }
 
   /* MAIN */
-main {
+  main {
     margin-top: 60px;
-}
+  }
 
   main .banner {
     background-image: url(../assets/images/background-banner-mobile.png);
@@ -252,7 +252,7 @@ main {
     width: 231px;
     height: 300px;
     border-radius: 8px;
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2),  rgba(122, 49, 236, .8));
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(122, 49, 236, .8));
 
     display: flex;
     flex-direction: column;
@@ -266,6 +266,8 @@ main {
   }
 
   main .progamer .jogos .jogos-diferentes h2 {
+    padding-top:20px ;
+    padding-bottom: 10px;
     font-family: 'Titillium-Web-Black';
     font-size: 18px;
 
@@ -291,26 +293,28 @@ main {
     height: 428px;
   }
 
-/* Card Professores */
+  /* Card Professores */
   main .progamer .professores .card-professores {
     position: absolute;
     width: 231px;
     height: 300px;
     left: 0;
     border-radius: 8px;
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2),  rgba(122, 49, 236, .8));
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(122, 49, 236, .8));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   main .progamer .professores .card-professores img {
     width: 97px;
     height: 97px;
   }
 
   main .progamer .professores .card-professores h2 {
+    padding-top:20px ;
+    padding-bottom: 10px;
     font-family: 'Titillium-Web-Black';
     font-size: 18px;
 
@@ -325,8 +329,128 @@ main {
     width: 176px;
   }
 
- /* -----TABLET----- */
- @media screen and (min-width: 768px) {}
+  main .noticias {
+    background-image: url(../assets/images/background-noticias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 3645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  main .noticias h2 {
+    font-family: 'Titillium-Web-Black';
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: #F9AA01 solid 2px;
+    width: 204px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  
+  main .noticias .card-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    height: 387px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgb(33, 26, 51, .3), rgba(5, 1, 12, .8));
+  }
+
+  main .noticias .card-noticias img {
+    width: 100%;
+    height: 174px;
+  }
+
+  main .noticias .card-noticias h3 {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  main .noticias .card-noticias p {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    text-align: justify;
+    width: 280px;
+  }
+
+  footer {
+    background-image: url(../assets/images/backgroung_footer-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1529px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .logo-footer {
+    width: 110px;
+    height: 34px;
+  }
+
+  footer > p {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    width: 333px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+footer .midias-sociais-footer {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+footer .midias-sociais-footer a {
+  text-decoration: none;
+}
+
+footer .links-uteis {
+  width: 345px;
+  height: 193px;
+  /* border: #F9AA01 3px solid; */
+}
+
+footer .links-uteis h1 {
+  font-family: 'Titillium-Web-Black';
+  font-size: 30px;
+  width: 148px;
+  border-bottom: #F9AA01 2px solid;
+  margin-bottom: 30px;
+}
+
+footer .links-uteis span {
+  color: #F9AA01;
+  font-weight: bold;
+}
+
+footer .links-uteis a {
+  font-family: 'Titillium-Web-Bold';
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+footer .local h1 {
+  font-family: 'Titillium-Web-Black';
+  font-size: 30px;
+  border-bottom: #F9AA01 2px solid;
+}
+
+  /* -----TABLET----- */
+  @media screen and (min-width: 768px) {}
 
   /* -----DESKTOP----- */
   @media screen and (min-width: 1200px) {
@@ -334,6 +458,66 @@ main {
       width: 100%;
       max-width: 1200px;
     }
+    
+    /* HEADER */
+    header {
+      height: 140px;
+    }
+
+    header .header-top {
+      display: block;
+      border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 450px;
+    }
+
+    header .header-top .contatos > div {
+      display: flex;
+      gap: 10px;
+      width: 200px;
+    }
 
     /* Elementos escondidos */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+      display: none;
+    }
+
+    header .logo {
+      width: 200px;
+    }
+
+    header .header-bottom nav {
+      position: static;
+      width: 440px;
+      height: 50px;
+      padding-bottom: 0;
+      flex-direction: row;
+      align-items: center;
+      background-color: red;
+      justify-content: space-between;
+    }
+
+    header .header-bottom nav > a {
+      padding: 0;
+      border: none;
+    }
+
+    header .header-bottom .menu-usuarios {
+      position: static;
+      flex-direction: row;
+      width: 140px;
+      background-color: transparent;
+      background-image: none;
+    }
+
+
   }

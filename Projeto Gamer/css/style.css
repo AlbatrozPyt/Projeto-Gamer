@@ -1,192 +1,234 @@
-  /* Importando Fontes */
-  @font-face {
-    font-family: 'Inter';
-    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
-  }
+ /* Imports de fonts */
+ @font-face {
+   font-family: Inter;
+   src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+ }
 
-  @font-face {
-    font-family: 'Titillium-Web-Black';
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
-  }
+ @font-face {
+   font-family: TitilliumWeb-Black;
+   src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+ }
 
-@font-face {
-  font-family: 'Titillium-Web-Bold';
-  src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
-}
+ @font-face {
+   font-family: TitilliumWeb-Bold;
+   src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+ }
 
-  /* RESET CSS */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+ /* Reset CSS */
 
-  body {
-    color: white;
-  }
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-  /* Classes genericas */
-  .layout-grid {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-  }
+ /* Classes Genéricas */
+ .layout-grid {
+   width: 90%;
+   height: 100%;
+   margin: 0 auto;
+   /* border: 1px solid salmon; */
+ }
 
-  /* Menu hamburguer aparece */
-  .mostrar-menu {
-    left: 0 !important;
-  }
+ .mostrar-menu {
+   left: 0 !important;
+ }
 
-  /* Menu usuarios aparece */
-  .mostrar-menu-2 {
-    right: 0 !important;
-  }
+ .mostrar-usuarios {
+   right: 0 !important;
+ }
 
-  /* Mobile First */
-
-  .alinhamento-between-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* HEADER */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-    width: 100vw;
-    background-color: #1B1426;
-    height: 60px;
-
-    margin-bottom: 60px;
-  }
+ /* justify content + align items */
+ .alinhamento-between-center {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
 
 
+ body {
+   color: white;
+ }
 
-  header .header-top {
-    display: none;
-  }
+ /* Mobile First */
 
-  header .header-bottom {
-    height: 60px;
-  }
+ /* HEADER */
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 60px;
+   z-index: 100;
+   background-color: #1B1426;
+ }
 
-  header .logo {
-    width: 86px;
-  }
+ header .header-top {
+   display: none;
+ }
 
-  header .header-bottom nav {
-    position: fixed;
-    top: 60px;
-    left: -80vw;
-    z-index: 101;
+ header .header-bottom {
+   height: 60px;
+ }
 
-    height: calc(100vh - 60px);
-    /* 100% da altura da viewport, menos 60px do top */
-    width: 80vw;
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
-    backdrop-filter: blur(45px);
+ header .logo {
+   width: 86px;
+ }
 
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
 
-    transition: left .4s;
-  }
+ header .header-bottom nav {
+   position: fixed;
+   top: 60px;
+   left: -80vw;
+   z-index: 101;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   width: 80vw;
+   height: calc(100vh - 60px);
+   padding-bottom: 20px;
+   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+   backdrop-filter: blur(45px);
 
-  header .header-bottom nav>a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 30px 0;
+   transition: left 0.4s;
+ }
 
-    border-bottom: 2px solid #F9AA01;
-    color: white;
 
-    font-size: 15px;
-    font-family: Inter;
-    text-decoration: none;
-  }
+ header .header-bottom nav>a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding: 30px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Inter;
+   text-decoration: none;
+   border-bottom: 2px solid #F9AA01;
+ }
 
-  header .header-bottom nav a:last-of-type {
-    border-bottom: none;
-  }
+ header .header-bottom nav a:last-of-type {
+   border-bottom: none;
+ }
 
-  header .header-bottom nav .midias-sociais {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
+ header .header-bottom nav .midias-sociais {
+   position: absolute;
+   bottom: 20px;
+   left: 0;
+   width: 100%;
 
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+   gap: 20px;
+ }
 
-    gap: 20px;
+ header .menu-usuarios {
+   position: fixed;
+   top: 60px;
+   right: -20vw;
+   width: 20vw;
+   height: 170px;
 
-    text-decoration: none;
-  }
+   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+   backdrop-filter: blur(45px);
 
-  /* menu-usuarios */
-  header .menu-usuarios {
-    position: fixed;
-    top: 60px;
-    right: -66px;
+   transition: right 0.4s;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+ }
 
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
 
-    width: 66px;
-    height: 170px;
+ /* MAIN */
 
-    transition: right 0.4s;
-  }
+ main {
+   margin-top: 60px;
+ }
 
-  main .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+ /* Banner */
 
-    position: absolute;
-    top: 60px;
+ main .banner {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 606px;
+   padding-top: 20px;
+   padding-bottom: 40px;
+   background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+ }
 
-    padding-top: 20px;
-    padding-bottom: 40px;
+ main .banner h1 {
+   font-family: TitilliumWeb-Black;
+   font-size: 40px;
+   text-shadow: 0 0 7px #FD4255;
+ }
 
-    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
-    background-repeat: no repeat;
-    background-size: cover;
 
-    width: 100%;
-    height: 606px;
-  }
+ main .banner a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+   height: 40px;
+   font-family: TitilliumWeb-Bold;
+   font-size: 24px;
+   color: black;
+   text-decoration: none;
+   background-color: #F9AA01;
+   border-radius: 8px;
+ }
 
-  main .banner h1 {
-    font-family: 'Titillium-Web-Black';
-    font-size: 40px;
-    text-shadow: 0 0 7px #FF0404;
-  }
+ /* Sessão Jogos */
 
-  main .banner a {
-    font-family: 'Titillium-Web-Bold';
-    font-size: 24px;
+ main .jogos {
+   width: 100%;
+   height: 590px;
+   background-color: #1B1426;
+ }
 
-    width: 203px;
-    height: 40px;
+ main .jogos .jogos-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+ }
 
-    text-decoration: none;
-    text-align: center;
 
-    color: black;
-    background-color: #F9AA01;
-    border-radius: 8px;
-  }
+ /* Tablets >= 768px */
+ @media screen and (min-width: 768px) {}
+
+ /* Desktop >= 1200px*/
+ @media screen and (min-width: 1200px) {
+  
+   .layout-grid {
+     width: 100%;
+     max-width: 1200px;
+   }
+
+   /* esconde os elementos desnecessários */
+   header .header-bottom .menu-hamburger,
+   header .header-bottom .menu-pontinhos,
+   header .header-bottom nav .phone,
+   header .header-bottom nav .mail,
+   header .header-bottom nav .midias-sociais {
+     display: none;
+   }
+
+
+   header .header-bottom nav {
+     position: static;
+     width: 440px;
+     height: 50px;
+     flex-direction: row;
+     align-items: center;
+     background-color: red;
+     justify-content: space-between;
+   }
+ }
