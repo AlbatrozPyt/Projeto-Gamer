@@ -658,7 +658,6 @@
       width: 514px;
       width: 689px;
       margin-right: 20px;
-      border: darkblue 3px solid;
     }
 
     main .progamer .jogos img {
@@ -671,11 +670,13 @@
       height: 440px;
     }
 
-    main .progamer .jogos .jogos-diferentes h2 {
+    main .progamer .jogos .jogos-diferentes h2, 
+    main .progamer .professores .card-professores h2 {
       font-size: 25px;
     }
 
-    main .progamer .jogos .jogos-diferentes p {
+    main .progamer .jogos .jogos-diferentes p,
+    main .progamer .professores .card-professores P {
       font-size: 16px;
       width: 238px;
     }
@@ -685,7 +686,6 @@
       width: 689px;
       position: relative;
       margin-left: 20px;
-      border: darkblue 3px solid;
     }
 
     main .progamer .professores img {
@@ -696,14 +696,5 @@
     main .progamer .professores .card-professores {
       width: 360px;
       height: 440px;
-    }
-
-    main .progamer .professores .card-professores h2 {
-      font-size: 25px;
-    }
-
-    main .progamer .professores .card-professores p {
-      font-size: 16px;
-      width: 238px;
     }
   }
