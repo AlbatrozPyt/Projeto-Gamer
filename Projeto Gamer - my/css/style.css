@@ -31,6 +31,11 @@
     color: white;
   }
 
+  a:hover {
+    background-color: #F9AA01;
+    color: black;
+  }
+
   /* Classes genericas */
   .layout-grid {
     width: 90%;
@@ -381,6 +386,7 @@
     width: 280px;
   }
 
+  /* FOOTER */
   footer {
     background-image: url(../assets/images/backgroung_footer-mobile.png);
     background-repeat: no-repeat;
@@ -391,6 +397,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+footer .gradiente {
+  width: 100%;
+}
 
   footer .logo-footer {
     width: 110px;
@@ -681,7 +691,7 @@
       height: 440px;
     }
 
-    main .progamer .jogos .jogos-diferentes h2, 
+    main .progamer .jogos .jogos-diferentes h2,
     main .progamer .professores .card-professores h2 {
       font-size: 25px;
     }
@@ -708,4 +718,12 @@
       width: 360px;
       height: 440px;
     }
+
+      main .noticias {
+        background-image: url(../assets/images/background-noticias.png);
+        border: mediumblue 3px groove;
+    }
+
+    /* FOOTER */
+
   }
