@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60vw;
+            height: 40vh;
+            background-color: rgb(16, 0, 16);
+            margin: 0 auto;
+        }
+
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+            width: 50%;
+            height: 40px;
+            padding: 5px 10px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .linha input {
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .linha input::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <div class="linha">
+            <img src="../Projeto Gamer - my/assets/icons/email-icon.svg" alt="">
+            <input type="email" placeholder="Digite seu e-mail:">
+        </div>
+    </form>
+</body>
+</html>

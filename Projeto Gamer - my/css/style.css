@@ -481,11 +481,22 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
-    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    background-color: transparent;
     border-radius: 8px;
     width: 333px;
     height: 40px;
     margin-bottom: 20px;
+    outline: none;
+    border: none;
+  }
+
+  footer form input::placeholder {
+    color: white;
+  }
+
+  .linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
   }
 
   footer form button {
