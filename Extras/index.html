@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +17,25 @@
             margin: 0 auto;
         }
 
+        /* "campo" */
         .linha {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 10px;
-            background-color: transparent;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+
             width: 50%;
             height: 40px;
-            padding: 5px 10px;
             border-radius: 8px;
-            backdrop-filter: blur(10px);
+
+            border: 1px solid transparent;
+            background:
+                /* content */
+                linear-gradient(to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10)) content-box,
+                /* border */
+                linear-gradient(to right bottom, red, green) border-box;
+
+            backdrop-filter: blur(4px);
         }
 
         .linha input {
@@ -38,15 +46,18 @@
             outline: none;
             color: white;
             font-family: 'Courier New', Courier, monospace;
+
         }
 
         .linha input::placeholder {
             color: white;
+        
         }
     </style>
 </head>
+
 <body>
-    
+
     <form action="">
         <div class="linha">
             <img src="../Projeto Gamer - my/assets/icons/email-icon.svg" alt="">
@@ -54,4 +65,5 @@
         </div>
     </form>
 </body>
+
 </html>

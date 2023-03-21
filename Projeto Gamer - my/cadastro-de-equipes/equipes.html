@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro de Equipes</title>
+    <link rel="stylesheet" href="css/equipes.css">
 </head>
 
 <body>
-
     <header>
         <div class="header-top">
             <div class="layout-grid alinhamento-between-center">
@@ -99,7 +98,7 @@
                     alt="ícone de 3 pontinhos, menu abre e fecha o menu de usuarios" class="menu-pontinhos">
 
                 <div class="menu-usuarios" id="menu-usuarios">
-                    <a href="login.html">
+                    <a href="../login/login.html">
                         <img src="../assets/icons/conta.svg" alt="Ícone de perfil">
                     </a>
 
@@ -117,25 +116,23 @@
     </header>
 
     <main>
-        <div class="login">
-            <h1>Login</h1>
-
+        <div class="cadastro">
+            <h1>Cadastro de Equipes</h1>
 
             <form action="">
                 <div class="linha">
-                    <img src="../assets/icons/email-icon.svg" alt="">
-                    <input type="email" placeholder="Digite seu e-mail:">
+                    <input type="email" placeholder="Digite o Id da sua equipe:">
                 </div>
 
                 <div class="linha">
-                    <img src="../assets/icons/key-password.svg" alt="">
-                    <input type="password" placeholder="Digite sua senha:">
+                    <input type="email" placeholder="Digite o nome da sua equipe:">
                 </div>
-                <button>Enviar</button>
 
-        </div>
-        </form>
-
+                <div class="input-arquivo">
+                    <input type="file">
+                </div>
+                <button>Cadastro</button>
+            </form>
         </div>
     </main>
 
@@ -221,6 +218,7 @@
             document.getElementById("menu-usuarios").classList.toggle("mostrar-menu-2")
         }
     </script>
+
 </body>
 
 </html>
