@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Titillium-Web-Bold';
-    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf)
 }
 
 @font-face {
@@ -59,8 +59,8 @@ a:hover {
     align-items: center;
 }
 
- /* HEADER */
- header {
+/* HEADER */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,23 +69,23 @@ a:hover {
     width: 100vw;
     background-color: #1B1426;
     height: 60px;
-  }
+}
 
 
 
-  header .header-top {
+header .header-top {
     display: none;
-  }
+}
 
-  header .header-bottom {
+header .header-bottom {
     height: 60px;
-  }
+}
 
-  header .logo {
+header .logo {
     width: 86px;
-  }
+}
 
-  header .header-bottom nav {
+header .header-bottom nav {
     position: fixed;
     top: 60px;
     left: -80vw;
@@ -102,9 +102,9 @@ a:hover {
     padding-bottom: 20px;
 
     transition: left .4s;
-  }
+}
 
-  header .header-bottom nav>a {
+header .header-bottom nav>a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,13 +117,13 @@ a:hover {
     font-size: 15px;
     font-family: Inter;
     text-decoration: none;
-  }
+}
 
-  header .header-bottom nav a:last-of-type {
+header .header-bottom nav a:last-of-type {
     border-bottom: none;
-  }
+}
 
-  header .header-bottom nav .midias-sociais {
+header .header-bottom nav .midias-sociais {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -135,9 +135,9 @@ a:hover {
     gap: 20px;
 
     text-decoration: none;
-  }
+}
 
-  header .menu-usuarios {
+header .menu-usuarios {
     position: fixed;
     top: 60px;
     right: -66px;
@@ -154,15 +154,15 @@ a:hover {
     height: 170px;
 
     transition: right 0.4s;
-  }
+}
 
 /* MAIN */
 main {
     margin-top: 60px;
-    background-image: url(../../assets/images/Banner_cadastro_de_Equipe-mobile.png);
+    background-image: url(../../assets/images/background-jogadores-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 1231px;
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ main {
 main .cadastro {
     margin-top: 50px;
     width: 335px;
-    height: 429px;
+    height: 650px;
     border-radius: 8px;
     background-image: linear-gradient(rgba(27, 20, 38), rgba(60, 3, 65, .4));
     display: flex;
@@ -185,11 +185,13 @@ main .cadastro {
 main .cadastro h1 {
     margin-top: 20px;
     font-family: 'Titillium-Web-Black';
+    text-transform: uppercase;
+    text-align: center;
     border-bottom: #F9AA01 2px solid;
+    width: 248px;
 }
 
 main .cadastro form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,9 +199,8 @@ main .cadastro form {
     gap: 30px;
 }
 
-main .cadastro .linha {
-    background: linear-gradient(to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10)) content-box,
-                linear-gradient(to right bottom, rgba(255, 255, 255), rgba(217, 0, 0, 0)) border-box;
+.linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
     width: 273px;
     height: 43px;
     border-radius: 8px;
@@ -221,9 +222,19 @@ main .cadastro .linha input::placeholder {
     color: white;
 }
 
-main .cadastro .input-arquivo  {
-    display: flex;
-    justify-content: center;
+main .cadastro select  {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+main .cadastro select option {
+    color: black;
+    background-color: #F9AA01;
 }
 
 main .cadastro button {
@@ -236,6 +247,7 @@ main .cadastro button {
     outline: none;
     background-color: #F9AA01;
 }
+
 
 /* FOOTER */
 footer {
@@ -394,135 +406,4 @@ footer .copyrigth {
     padding-bottom: 50px;
     margin-top: 50px;
     text-align: center;
-}
-
-/* DESKTOP */
-@media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    /* HEADER */
-    header {
-        position: static;
-        height: 140px;
-        width: 100%;
-    }
-
-    header .header-top {
-        display: block;
-        height: 50px;
-        border-bottom: 2px solid #F9AA01;
-    }
-
-    header .header-top .midias-sociais {
-        display: flex;
-        justify-content: space-between;
-        width: 140px;
-    }
-
-    header .header-top .contatos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px;
-        font-family: 'Inter';
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    header .header-top .contatos>a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 200px;
-    }
-
-    /* Elementos escondidos */
-    header .header-bottom .menu-hamburger,
-    header .header-bottom .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .mail,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
-
-    header .header-bottom {
-        height: 90px;
-    }
-
-    header .logo {
-        width: 200px;
-    }
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        padding-bottom: 0;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header .header-bottom nav>a {
-        padding: 0;
-        border: none;
-    }
-
-    header .header-bottom .menu-usuarios {
-        position: static;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 140px;
-        background-color: transparent;
-        background-image: none;
-    }
-
-    /* MAIN */
-    main {
-        margin-top: 0;
-        background-image: url(../../assets/images/banner_cadastro_de_equipe.png);
-        height: 1372px;
-    }
-
-    main .cadastro {
-        width: 800px;
-        height: 530px;
-    }
-
-    main .cadastro .linha {
-        width: 565px;
-    }
-
-
-    /* FOOTER */
-    footer {
-        background-image: url(../../assets/images/backgroung_footer.png);
-        height: 558px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-
-    footer .logo-footer {
-        width: 197px;
-        height: 55px;
-    }
-
-    footer .info p {
-        width: 280px;
-    }
-
-    footer .midias-sociais-footer {
-        width: 195px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 100px;
-    }
-
-    footer .links-uteis {
-        height: 255px;
-    }
 }

@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro de Jogadores</title>
+    <link rel="stylesheet" href="css/jogadores.css">
 </head>
 
 <body>
-
     <header>
         <div class="header-top">
             <div class="layout-grid alinhamento-between-center">
@@ -117,25 +116,37 @@
     </header>
 
     <main>
-        <div class="login">
-            <h1>Login</h1>
-
+        <div class="cadastro">
+            <h1>Cadastro de Jogadores</h1>
 
             <form action="">
                 <div class="linha">
-                    <img src="../assets/icons/email-icon.svg" alt="">
-                    <input type="email" placeholder="Digite seu e-mail:">
+                    <input type="email" placeholder="Digite o Id do jogador:">
+                </div>
+
+
+                <div class="linha">
+                    <select>
+                        <option value="">Selecione uma Equipe:</option>
+                        <option value="">a</option>
+                        <option value="">b</option>
+                        <option value="">c</option>
+                    </select>
+                </div>
+                <div class="linha">
+                    <input type="email" placeholder="Digite o nome do jogador:">
                 </div>
 
                 <div class="linha">
-                    <img src="../assets/icons/key-password.svg" alt="">
-                    <input type="password" placeholder="Digite sua senha:">
+                    <input type="email" placeholder="Digite o email do jogador:">
                 </div>
-                <button>Enviar</button>
 
-        </div>
-        </form>
+                <div class="linha">
+                    <input type="password" placeholder="Digite a senha:">
+                </div>
 
+                <button>Cadastro</button>
+            </form>
         </div>
     </main>
 
@@ -221,6 +232,7 @@
             document.getElementById("menu-usuarios").classList.toggle("mostrar-menu-2")
         }
     </script>
+
 </body>
 
 </html>

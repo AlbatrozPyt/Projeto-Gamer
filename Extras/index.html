@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            color: darkturquoise;
+        }
+
         form {
             display: flex;
             justify-content: center;
@@ -51,7 +55,20 @@
 
         .linha input::placeholder {
             color: white;
-        
+
+        }
+
+        table {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: tomato;
+            width: 60vw;
+            height: 40vh;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        table tr {
+            background-color: teal;
         }
     </style>
 </head>
@@ -64,6 +81,36 @@
             <input type="email" placeholder="Digite seu e-mail:">
         </div>
     </form>
+
+    <table border="1">
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Foto</th>
+            <th>Ações</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Matheus</td>
+                <td>Foto ???</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Matheus</td>
+                <td>Foto ???</td>
+                <td>Trash</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="3">Total</td>
+            <td>2</td>
+        </tfoot>
+    </table>
 </body>
 
 </html>
