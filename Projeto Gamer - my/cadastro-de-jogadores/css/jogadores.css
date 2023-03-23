@@ -248,6 +248,82 @@ main .cadastro button {
     background-color: #F9AA01;
 }
 
+main .tabela-jogadores {
+    width: 337px;
+    height: 374px;
+}
+
+main table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+main table thead {
+    border-bottom: #F9AA01 2px solid;
+}
+
+main table th {
+    font-family: 'Titillium-Web-Black';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F9AA01;
+    padding-left: 40px;
+}
+
+main table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main table tbody tr {
+    height: 70px;
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(rgba(27, 20, 38, .6), rgba(60, 3, 65, .4));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+main table tbody tr::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+main table tbody td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium-Web-Black';
+    text-transform: lowercase;
+    font-size: 20px;
+    width: 100%;
+    height: 33px;
+    border-right: #F9AA01 3px solid;
+}
+
+main table tbody td:last-of-type {
+    border-right: none;
+}
+
+main table tbody .diferente {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 18px;
+    text-transform: lowercase;
+    padding: 5px 5px 5px 5px;
+}
+
 
 /* FOOTER */
 footer {
