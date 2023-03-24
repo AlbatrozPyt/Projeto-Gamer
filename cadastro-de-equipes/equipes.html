@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro de Equipes</title>
+    <link rel="stylesheet" href="css/equipes.css">
 </head>
 
 <body>
-
     <header>
         <div class="header-top">
             <div class="layout-grid alinhamento-between-center">
@@ -62,7 +61,7 @@
                     <a href="../index.html">Início</a>
                     <a href="../cadastro-de-jogadores/jogadores.html">Jogadores</a>
                     <a href="../cadastro-de-equipes/equipes.html">Equipes</a>
-                    <a href="noticias">Notícias</a>
+                    <a href="">Notícias</a>
 
                     <!-- Visivel apenas no mobile -->
                     <a class="phone">
@@ -99,7 +98,7 @@
                     alt="ícone de 3 pontinhos, menu abre e fecha o menu de usuarios" class="menu-pontinhos">
 
                 <div class="menu-usuarios" id="menu-usuarios">
-                    <a href="login.html">
+                    <a href="../login/login.html">
                         <img src="../assets/icons/conta.svg" alt="Ícone de perfil">
                     </a>
 
@@ -117,32 +116,72 @@
     </header>
 
     <main>
-        <div class="login">
-            <h1>Login</h1>
-
+        <div class="cadastro">
+            <h1>Cadastro de Equipes</h1>
 
             <form action="">
                 <div class="linha">
-                    <img src="../assets/icons/email-icon.svg" alt="">
-                    <input type="email" placeholder="Digite seu e-mail:">
+                    <input type="email" placeholder="Digite o Id da sua equipe:">
                 </div>
 
                 <div class="linha">
-                    <img src="../assets/icons/key-password.svg" alt="">
-                    <input type="password" placeholder="Digite sua senha:">
+                    <input type="email" placeholder="Digite o nome da sua equipe:">
                 </div>
-                <button>Enviar</button>
 
+                <div class="input-arquivo">
+                    <input type="file">
+                </div>
+                <button>Cadastro</button>
+            </form>
         </div>
-        </form>
 
+        <div class="tabela-equipes">
+            <table>
+                <thead>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Foto</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>loud</td>
+                        <td><img src="..//assets/images/foto-tabela.png" alt=""></td>
+                        <td><img src="..//assets/icons/trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>loud</td>
+                        <td><img src="..//assets/images/foto-tabela.png" alt=""></td>
+                        <td><img src="..//assets/icons/trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>loud</td>
+                        <td><img src="..//assets/images/foto-tabela.png" alt=""></td>
+                        <td><img src="..//assets/icons/trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>loud</td>
+                        <td><img src="..//assets/images/foto-tabela.png" alt=""></td>
+                        <td><img src="..//assets/icons/trash.svg" alt=""></td>
+                    </tr>
+                </tbody>
+
+                <tfoot></tfoot>
+            </table>
         </div>
     </main>
 
     <footer>
-        <img src="../assets/images/restangulo_gradiente_transicao_para_o_footer.png" alt="" class="gradiente"
-            width="100%" height="150px">
-        <div class="layout-grid">
+        <img src="../assets/images/restangulo_gradiente_transicao_para_o_footer.png" alt="" class="gradiente" width="100%"
+            height="100px">
+        <div class="layout-grid footer-flex">
 
 
             <div class="info">
@@ -170,11 +209,11 @@
             <div class="links-uteis">
                 <h1>Links Úteis</h1>
 
-                <a href=""><span>-</span>Inicio</a>
-                <a href=""><span>-</span>Jogadores</a>
+                <a href="../index.html"><span>-</span>Inicio</a>
+                <a href="../cadastro-de-jogadores/jogadores.html"><span>-</span>Jogadores</a>
                 <a href=""><span>-</span>Notícias</a>
-                <a href=""><span>-</span>Login</a>
-                <a href=""><span>-</span>Equipes</a>
+                <a href="../login/login.html"><span>-</span>Login</a>
+                <a href="equipes.html"><span>-</span>Equipes</a>
             </div>
 
             <div class="local">
@@ -205,11 +244,12 @@
             </div>
 
 
-            <img src="../assets/icons/botao-topo.svg" alt="" class="botao-topo">
 
-            <p class="copyrigth">©Copyright2022-GamerJogosDigitais</p>
+            <p class="copyrigth">©Copyright2022-GamerJogosDigitais <img src="..//assets/icons/botao-topo.svg" alt=""
+                    class="botao-topo">
+            </p>
         </div>
-        </div>
+
     </footer>
 
     <script>
@@ -221,6 +261,7 @@
             document.getElementById("menu-usuarios").classList.toggle("mostrar-menu-2")
         }
     </script>
+
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-/* Importando Fontes */
 @font-face {
     font-family: 'Inter';
     src: url(../../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
@@ -11,7 +10,7 @@
 
 @font-face {
     font-family: 'Titillium-Web-Bold';
-    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf)
+    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
 
 @font-face {
@@ -158,34 +157,128 @@ header .menu-usuarios {
 }
 
 /* MAIN */
-
 main {
     margin-top: 60px;
-    background-image: url(../../assets/images/Banner-Login-mobile.png);
+    background-image: url(../../assets/images/Banner_cadastro_de_Equipe-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 1231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+main .cadastro {
+    margin-top: 50px;
+    width: 335px;
+    height: 429px;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(27, 20, 38), rgba(60, 3, 65, .4));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .cadastro h1 {
+    margin-top: 20px;
+    font-family: 'Titillium-Web-Black';
+    border-bottom: #F9AA01 2px solid;
+}
+
+main .cadastro form {
     width: 100%;
-    height: 786px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
-main .login {
-    position: relative;
-    width: 340px;
-    height: 500px;
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .4));
+main .cadastro .linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    width: 273px;
+    height: 43px;
     border-radius: 8px;
-    z-index: 0;
+    padding-left: 10px;
+    backdrop-filter: blur(3px);
+}
+
+main .cadastro .linha input {
+    width: 273px;
+    height: 43px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+main .cadastro .linha input::placeholder {
+    color: white;
+}
+
+main .cadastro .input-arquivo {
+    display: flex;
+    justify-content: center;
+}
+
+main .cadastro button {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    width: 277px;
+    height: 43px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #F9AA01;
+}
+
+main .tabela-equipes {
+    width: 337px;
+    height: 374px;
+}
+
+main table {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
-main .login::before {
+main table thead {
+    border-bottom: #F9AA01 2px solid;
+}
+
+main table th {
+    font-family: 'Titillium-Web-Black';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F9AA01;
+    padding-left: 40px;
+}
+
+main table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main table tbody tr {
+    height: 70px;
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(rgba(27, 20, 38, .6), rgba(60, 3, 65, .4));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+main table tbody tr::before {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -194,61 +287,23 @@ main .login::before {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
-main .login h1 {
-    font-family: 'Titillium-Web-Black';
-    font-size: 28px;
-    text-align: center;
-    border-top: #F9AA01 2px solid;
-    width: 100px;
-}
-
-main form {
+main table tbody td {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    font-family: 'Titillium-Web-Black';
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    height: 33px;
+    border-right: #F9AA01 3px solid;
 }
 
-main form .linha {
-    display: flex;
-
-    align-items: center;
-    gap: 20px;
-    width: 277px;
-    height: 43px;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .1));
-    border-radius: 8px;
-}
-
-main form .linha img {
-    padding-left: 10px;
-}
-
-main form .linha input {
-    width: 277px;
-    height: 43px;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border: none;
-}
-
-main form .linha input::placeholder {
-    color: white;
-}
-
-main form button {
-    font-family: 'Titillium-Web-Bold';
-    font-size: 24px;
-    background-color: #F9AA01;
-    border-radius: 8px;
-    border: none;
-    width: 277px;
-    height: 43px;
+main table tbody td:last-of-type {
+    border-right: none;
 }
 
 /* FOOTER */
@@ -390,18 +445,21 @@ footer form button {
 }
 
 footer .botao-topo {
-    position: relative;
-    right: -300px;
-    top: 10px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+
 }
 
 footer .copyrigth {
+    position: relative;
     font-family: 'Quicksand';
     font-size: 14px;
     width: 333px;
+    height: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -492,49 +550,141 @@ footer .copyrigth {
     /* MAIN */
     main {
         margin-top: 0;
-        background-image: url(../../assets/images/Banner-Login-desktop.png);
-        backdrop-filter: blur(100px);
+        background-image: url(../../assets/images/banner_cadastro_de_equipe.png);
+        height: 1372px;
     }
 
-    main .login {
+    main .cadastro {
         width: 800px;
-        height: 520px;
+        height: 530px;
     }
 
-    main .login h1 {
-        font-family: 'Titillium-Web-Black';
-        font-size: 40px;
-    }
-
-    main form .linha {
+    main .cadastro .linha {
         width: 565px;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+        background-image: url(../../assets/images/banner_cadastro_de_equipe.png);
+        height: 1372px;
+    }
+
+    main .cadastro {
+        width: 800px;
+        height: 530px;
+    }
+
+    main .cadastro h1 {
+        width: auto;
+    }
+
+    main .cadastro .linha {
+        width: 565px;
+    }
+
+    main .tabela-equipes {
+        width: 800px;
+        height: 700px;
+    }
+
+    main .tabela-equipes th {
+        padding-right: 100px;
+        padding-left: 50px;
+    }
+
+    main .tabela-equipes tr {
+        height: 125px;
     }
 
     /* FOOTER */
     footer {
         background-image: url(../../assets/images/backgroung_footer.png);
-        height: 558px;
-        flex-direction: row;
-        flex-wrap: wrap;
+        height: 528px;
+        display: flex;
+        align-items: center;
     }
 
-    footer .logo-footer {
+    footer .footer-flex {
+        position: relative;
+        width: 100%;
+    }
+
+    footer .footer-flex .info {
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 25%;
+    }
+
+    footer .footer-flex .info .logo-footer {
         width: 197px;
         height: 55px;
     }
 
-    footer .info p {
-        width: 280px;
+    footer .footer-flex .info p {
+        width: 285px;
+        letter-spacing: 1px;
     }
 
     footer .midias-sociais-footer {
-        width: 195px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 100px;
+        width: 200px;
     }
 
     footer .links-uteis {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
         height: 255px;
+    }
+
+    footer .local {
+        width: 25%;
+        position: absolute;
+        top: 0;
+        right: 25%;
+    }
+
+    footer .newsletter {
+        position: absolute;
+        top: 0;
+        right: -5%;
+        height: 230px;
+    }
+
+    footer .newsletter form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    footer .newsletter .linha {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .newsletter input {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .newsletter button {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .copyrigth {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer .footer-flex .botao-topo {
+        top: 0;
     }
 }

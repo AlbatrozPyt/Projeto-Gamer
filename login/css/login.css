@@ -1,3 +1,4 @@
+/* Importando Fontes */
 @font-face {
     font-family: 'Inter';
     src: url(../../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
@@ -157,139 +158,34 @@ header .menu-usuarios {
 }
 
 /* MAIN */
+
 main {
     margin-top: 60px;
-    background-image: url(../../assets/images/background-jogadores-mobile.png);
+    background-image: url(../../assets/images/Banner-Login-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 1231px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-main .cadastro {
-    margin-top: 50px;
-    width: 335px;
-    height: 650px;
-    border-radius: 8px;
-    background-image: linear-gradient(rgba(27, 20, 38), rgba(60, 3, 65, .4));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-main .cadastro h1 {
-    margin-top: 20px;
-    font-family: 'Titillium-Web-Black';
-    text-transform: uppercase;
-    text-align: center;
-    border-bottom: #F9AA01 2px solid;
-    width: 248px;
-}
-
-main .cadastro form {
+    height: 786px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
 
-.linha {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
-    width: 273px;
-    height: 43px;
-    border-radius: 8px;
-    padding-left: 10px;
-    backdrop-filter: blur(3px);
-}
-
-main .cadastro .linha input {
-    width: 273px;
-    height: 43px;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    background-color: transparent;
-    color: white;
-}
-
-main .cadastro .linha input::placeholder {
-    color: white;
-}
-
-main .cadastro select  {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-main .cadastro select option {
-    color: black;
-    background-color: #F9AA01;
-}
-
-main .cadastro button {
-    font-family: 'Titillium-Web-Bold';
-    font-size: 24px;
-    width: 277px;
-    height: 43px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background-color: #F9AA01;
-}
-
-main .tabela-jogadores {
-    width: 337px;
-    height: 374px;
-}
-
-main table {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-main table thead {
-    border-bottom: #F9AA01 2px solid;
-}
-
-main table th {
-    font-family: 'Titillium-Web-Black';
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #F9AA01;
-    padding-left: 40px;
-}
-
-main table tbody {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-main table tbody tr {
-    height: 70px;
+main .login {
     position: relative;
-    z-index: 0;
-    background-image: linear-gradient(rgba(27, 20, 38, .6), rgba(60, 3, 65, .4));
+    width: 340px;
+    height: 500px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .4));
     border-radius: 8px;
+    z-index: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
 }
 
-main table tbody tr::before {
+main .login::before {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -298,32 +194,62 @@ main table tbody tr::before {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
-main table tbody td {
+main .login h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 28px;
+    text-align: center;
+    border-top: #F9AA01 2px solid;
+    width: 100px;
+}
+
+main form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Titillium-Web-Black';
-    text-transform: lowercase;
-    font-size: 20px;
-    width: 100%;
-    height: 33px;
-    border-right: #F9AA01 3px solid;
+    gap: 25px;
 }
 
-main table tbody td:last-of-type {
-    border-right: none;
+main form .linha {
+    display: flex;
+
+    align-items: center;
+    gap: 20px;
+    width: 277px;
+    height: 43px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .1));
+    border-radius: 8px;
 }
 
-main table tbody .diferente {
+main form .linha img {
+    padding-left: 10px;
+}
+
+main form .linha input {
+    width: 277px;
+    height: 43px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+main form .linha input::placeholder {
+    color: white;
+}
+
+main form button {
     font-family: 'Titillium-Web-Bold';
-    font-size: 18px;
-    text-transform: lowercase;
-    padding: 5px 5px 5px 5px;
+    font-size: 24px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+    border: none;
+    width: 277px;
+    height: 43px;
 }
-
 
 /* FOOTER */
 footer {
@@ -432,16 +358,6 @@ footer .newsletter h1 {
     margin-bottom: 30px;
 }
 
-footer form .linha {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
-    width: 333px;
-    height: 43px;
-    border-radius: 8px;
-    padding-left: 10px;
-    backdrop-filter: blur(3px);
-    margin-bottom: 25px;
-}
-
 footer form input {
     display: flex;
     align-items: center;
@@ -459,6 +375,11 @@ footer form input::placeholder {
     color: white;
 }
 
+.linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+}
+
 footer form button {
     font-family: 'Titillium-Web-Bold';
     font-size: 24px;
@@ -469,17 +390,217 @@ footer form button {
 }
 
 footer .botao-topo {
-    position: relative;
-    right: -300px;
-    top: 10px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+
 }
 
 footer .copyrigth {
+    position: relative;
     font-family: 'Quicksand';
     font-size: 14px;
     width: 333px;
+    height: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /* HEADER */
+    header {
+        position: static;
+        height: 140px;
+        width: 100%;
+    }
+
+    header .header-top {
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .midias-sociais {
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    header .header-top .contatos>a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+    }
+
+    /* Elementos escondidos */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    header .header-bottom {
+        height: 90px;
+    }
+
+    header .logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding-bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header-bottom nav>a {
+        padding: 0;
+        border: none;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 140px;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+        background-image: url(../../assets/images/Banner-Login-desktop.png);
+        backdrop-filter: blur(100px);
+    }
+
+    main .login {
+        width: 800px;
+        height: 520px;
+    }
+
+    main .login h1 {
+        font-family: 'Titillium-Web-Black';
+        font-size: 40px;
+    }
+
+    main form .linha {
+        width: 565px;
+    }
+
+   /* FOOTER */
+   footer {
+    background-image: url(../../assets/images/backgroung_footer.png);
+    height: 528px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-flex {
+    position: relative;
+    width: 100%;
+}
+
+footer .footer-flex .info {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 25%;
+}
+
+footer .footer-flex .info .logo-footer {
+    width: 197px;
+    height: 55px;
+}
+
+footer .footer-flex .info p {
+    width: 285px;
+    letter-spacing: 1px;
+}
+
+footer .midias-sociais-footer {
+    width: 200px;
+}
+
+footer .links-uteis {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 255px;
+}
+
+footer .local {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+
+footer .newsletter {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    height: 230px;
+}
+
+footer .newsletter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+footer .newsletter .linha {
+    width: 290px;
+    height: 40px;
+}
+
+footer .newsletter input {
+    width: 290px;
+    height: 40px;
+}
+
+footer .newsletter button {
+    width: 290px;
+    height: 40px;
+}
+
+footer .copyrigth {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-flex .botao-topo {
+    top: 0;
+}
 }

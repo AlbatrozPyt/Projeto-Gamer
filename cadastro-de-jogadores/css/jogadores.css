@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Titillium-Web-Bold';
-    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+    src: url(../../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf)
 }
 
 @font-face {
@@ -159,22 +159,22 @@ header .menu-usuarios {
 /* MAIN */
 main {
     margin-top: 60px;
-    background-image: url(../../assets/images/Banner_cadastro_de_Equipe-mobile.png);
+    background-image: url(../../assets/images/background-jogadores-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 1231px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 
 }
 
 main .cadastro {
     margin-top: 50px;
+    margin-bottom: 100px;
     width: 335px;
-    height: 429px;
+    height: 650px;
     border-radius: 8px;
     background-image: linear-gradient(rgba(27, 20, 38), rgba(60, 3, 65, .4));
     display: flex;
@@ -186,11 +186,13 @@ main .cadastro {
 main .cadastro h1 {
     margin-top: 20px;
     font-family: 'Titillium-Web-Black';
+    text-transform: uppercase;
+    text-align: center;
     border-bottom: #F9AA01 2px solid;
+    width: 248px;
 }
 
 main .cadastro form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +200,7 @@ main .cadastro form {
     gap: 30px;
 }
 
-main .cadastro .linha {
+main .linha {
     background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
     width: 273px;
     height: 43px;
@@ -221,9 +223,19 @@ main .cadastro .linha input::placeholder {
     color: white;
 }
 
-main .cadastro .input-arquivo {
-    display: flex;
-    justify-content: center;
+main .cadastro select {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+main .cadastro select option {
+    color: black;
+    background-color: #F9AA01;
 }
 
 main .cadastro button {
@@ -237,7 +249,7 @@ main .cadastro button {
     background-color: #F9AA01;
 }
 
-main .tabela-equipes {
+main .tabela-jogadores {
     width: 337px;
     height: 374px;
 }
@@ -254,12 +266,13 @@ main table thead {
     border-bottom: #F9AA01 2px solid;
 }
 
-main table th {
+main table thead th {
     font-family: 'Titillium-Web-Black';
     font-size: 20px;
+    width: 100%;
     text-transform: uppercase;
     color: #F9AA01;
-    padding-left: 40px;
+    padding-right: 50px;
 }
 
 main table tbody {
@@ -295,7 +308,7 @@ main table tbody td {
     justify-content: center;
     align-items: center;
     font-family: 'Titillium-Web-Black';
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 20px;
     width: 100%;
     height: 33px;
@@ -305,6 +318,14 @@ main table tbody td {
 main table tbody td:last-of-type {
     border-right: none;
 }
+
+main table tbody .diferente {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 18px;
+    text-transform: lowercase;
+    padding: 5px 5px 5px 5px;
+}
+
 
 /* FOOTER */
 footer {
@@ -413,16 +434,6 @@ footer .newsletter h1 {
     margin-bottom: 30px;
 }
 
-footer form .linha {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
-    width: 333px;
-    height: 43px;
-    border-radius: 8px;
-    padding-left: 10px;
-    backdrop-filter: blur(3px);
-    margin-bottom: 25px;
-}
-
 footer form input {
     display: flex;
     align-items: center;
@@ -440,6 +451,11 @@ footer form input::placeholder {
     color: white;
 }
 
+.linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+}
+
 footer form button {
     font-family: 'Titillium-Web-Bold';
     font-size: 24px;
@@ -450,18 +466,21 @@ footer form button {
 }
 
 footer .botao-topo {
-    position: relative;
-    right: -300px;
-    top: 10px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+
 }
 
 footer .copyrigth {
+    position: relative;
     font-family: 'Quicksand';
     font-size: 14px;
     width: 333px;
+    height: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -552,7 +571,7 @@ footer .copyrigth {
     /* MAIN */
     main {
         margin-top: 0;
-        background-image: url(../../assets/images/banner_cadastro_de_equipe.png);
+        background-image: url(../../assets/images/background-jogadores-desktop.png);
         height: 1372px;
     }
 
@@ -561,37 +580,116 @@ footer .copyrigth {
         height: 530px;
     }
 
+    main .cadastro h1 {
+        width: auto;
+    }
+
     main .cadastro .linha {
         width: 565px;
     }
 
+    main .tabela-jogadores {
+        width: 800px;
+        height: 574px;
+    }
+
+    main .tabela-jogadores th {
+        padding-right: 100px;
+        padding-left: 50px;
+    }
+
+    main .tabela-jogadores tr {
+        height: 125px;
+    }
 
     /* FOOTER */
     footer {
         background-image: url(../../assets/images/backgroung_footer.png);
-        height: 558px;
-        flex-direction: row;
-        flex-wrap: wrap;
+        height: 528px;
+        display: flex;
+        align-items: center;
     }
 
+    footer .footer-flex {
+        position: relative;
+        width: 100%;
+    }
 
-    footer .logo-footer {
+    footer .footer-flex .info {
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 25%;
+    }
+
+    footer .footer-flex .info .logo-footer {
         width: 197px;
         height: 55px;
     }
 
-    footer .info p {
-        width: 280px;
+    footer .footer-flex .info p {
+        width: 285px;
+        letter-spacing: 1px;
     }
 
     footer .midias-sociais-footer {
-        width: 195px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 100px;
+        width: 200px;
     }
 
     footer .links-uteis {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
         height: 255px;
+    }
+
+    footer .local {
+        width: 25%;
+        position: absolute;
+        top: 0;
+        right: 25%;
+    }
+
+    footer .newsletter {
+        position: absolute;
+        top: 0;
+        right: -5%;
+        height: 230px;
+    }
+
+    footer .newsletter form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    footer .newsletter .linha {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .newsletter input {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .newsletter button {
+        width: 290px;
+        height: 40px;
+    }
+
+    footer .copyrigth {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer .footer-flex .botao-topo {
+        top: 0;
     }
 }
