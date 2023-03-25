@@ -361,7 +361,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    width: 335px;
     height: 387px;
     border-radius: 8px;
     background-image: linear-gradient(to right bottom, rgb(33, 26, 51, .3), rgba(5, 1, 12, .8));
@@ -381,9 +381,9 @@
 
   main .noticias .card-noticias p {
     font-family: 'Quicksand';
-    font-size: 13px;
+    font-size: 18px;
     text-align: justify;
-    width: 200px;
+    width: 280px;
   }
 
   /* FOOTER */
@@ -751,6 +751,16 @@
 
     main .noticias .block h2 {
       font-size: 30px;
+    }
+
+    main .noticias .card-noticias {
+      width: 290px;
+    }
+
+    main .noticias .card-noticias p {
+      font-size: 13px;
+      width: 250px;
+
     }
 
     /* FOOTER */
