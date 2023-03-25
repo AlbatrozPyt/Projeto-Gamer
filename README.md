@@ -1,4 +1,4 @@
 # Projeto-Gamer
 link da pagina -> [https://albatrozpyt.github.io/Projeto-Gamer/]
 GitHub -> [https://github.com/AlbatrozPyt/]
-!(https://th.bing.com/th/id/OIP.lP5WUVSER67AvHBsFaxzEgHaFj?w=231&h=180&c=7&r=0&o=5&pid=1.7)
+![image](https://user-images.githubusercontent.com/115594555/227743918-15141309-2c0d-4f52-b54f-1b6ef32459af.png)
