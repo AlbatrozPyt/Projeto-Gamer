@@ -1,0 +1,227 @@
+/* MAIN */
+main {
+    margin-top: 60px;
+  }
+
+  main .banner {
+    background-image: url(../assets/images/background-banner-mobile.png);
+    background-repeat: no repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 606px;
+  }
+
+  main .banner .flex {
+    height: 503px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  main .banner .flex h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 40px;
+    font-weight: 100;
+    text-shadow: 0 0 7px #FF0404;
+  }
+
+  main .banner .flex a {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+    background-color: #F9AA01;
+
+    width: 203px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  main .destaques {
+    height: 588px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  main .destaques img {
+    width: 336px;
+    height: 189px;
+  }
+
+  main .progamer {
+    width: 100vw;
+    height: 1535px;
+    background-color: #F9AA01;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .progamer h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 258px;
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+
+  main .progamer .jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  main .progamer .jogos img {
+    height: 511px;
+  }
+
+  /* Card Jogos */
+  main .progamer .jogos .jogos-diferentes {
+    position: absolute;
+    right: 0;
+    width: 231px;
+    height: 300px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(122, 49, 236, .8));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .progamer .jogos .jogos-diferentes img {
+    width: 97px;
+    height: 97px;
+  }
+
+  main .progamer .jogos .jogos-diferentes h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
+
+    color: white;
+    text-transform: uppercase;
+  }
+
+  main .progamer .jogos .jogos-diferentes p {
+    font-family: 'Quicksand';
+    font-size: 13px;
+    text-align: justify;
+    width: 176px;
+  }
+
+  main .progamer .professores {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+  }
+
+  main .progamer .professores img {
+    height: 428px;
+  }
+
+  /* Card Professores */
+  main .progamer .professores .card-professores {
+    position: absolute;
+    width: 231px;
+    height: 300px;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(122, 49, 236, .8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .progamer .professores .card-professores img {
+    width: 97px;
+    height: 97px;
+  }
+
+  main .progamer .professores .card-professores h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Titillium-Web-Black';
+    font-size: 18px;
+
+    color: white;
+    text-transform: uppercase;
+  }
+
+  main .progamer .professores .card-professores p {
+    font-family: 'Quicksand';
+    font-size: 13px;
+    text-align: justify;
+    width: 176px;
+  }
+
+  main .noticias {
+    background-image: url(../assets/images/background-noticias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 3645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  main .noticias h2 {
+    font-family: 'Titillium-Web-Black';
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: #F9AA01 solid 2px;
+    width: 204px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+
+  main .noticias .card-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    height: 387px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgb(33, 26, 51, .3), rgba(5, 1, 12, .8));
+  }
+
+  main .noticias .card-noticias img {
+    width: 100%;
+    height: 174px;
+  }
+
+  main .noticias .card-noticias h3 {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  main .noticias .card-noticias p {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    text-align: justify;
+    width: 280px;
+  }

@@ -1,0 +1,309 @@
+/* -----DESKTOP----- */
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* HEADER */
+    header {
+      position: static;
+      height: 140px;
+      width: 100%;
+    }
+
+    header .header-top {
+      display: block;
+      height: 50px;
+      border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .midias-sociais {
+      display: flex;
+      justify-content: space-between;
+      width: 140px;
+    }
+
+    header .header-top .contatos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 450px;
+      font-family: 'Inter';
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    header .header-top .contatos>a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 200px;
+    }
+
+    /* Elementos escondidos */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+      display: none;
+    }
+
+    header .header-bottom {
+      height: 90px;
+    }
+
+    header .logo {
+      width: 200px;
+    }
+
+    header .header-bottom nav {
+      position: static;
+      width: 440px;
+      height: 50px;
+      padding-bottom: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .header-bottom nav>a {
+      padding: 0;
+      border: none;
+    }
+
+    header .header-bottom .menu-usuarios {
+      position: static;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 140px;
+      background-color: transparent;
+      background-image: none;
+    }
+
+    /* MAIN */
+    main {
+      margin-top: 0;
+    }
+
+    main .banner {
+      background-image: url(../assets/images/Banner_background-desktop.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 813px;
+    }
+
+    main .banner .flex {
+      height: 720px;
+      justify-content: space-between;
+    }
+
+    main .banner .flex h1 {
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-size: 80px;
+    }
+
+    main .destaques {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 500px;
+    }
+
+    main .destaques img {
+      width: 556px;
+      height: 313px;
+    }
+
+    main .progamer {
+      height: 1000px;
+      width: 100%;
+    }
+
+    main .progamer h1 {
+      padding-top: 100px;
+      width: 597px;
+      font-size: 40px;
+    }
+
+    main .progamer .progamer-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 50px;
+
+
+    }
+
+    main .progamer .jogos {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      position: relative;
+      width: 514px;
+      width: 689px;
+      margin-right: 20px;
+    }
+
+    main .progamer .jogos img {
+      width: 422px;
+      height: 689px;
+    }
+
+    main .progamer .jogos .jogos-diferentes {
+      width: 360px;
+      height: 440px;
+    }
+
+    main .progamer .jogos .jogos-diferentes h2,
+    main .progamer .professores .card-professores h2 {
+      font-size: 25px;
+    }
+
+    main .progamer .jogos .jogos-diferentes p,
+    main .progamer .professores .card-professores P {
+      font-size: 16px;
+      width: 238px;
+    }
+
+    main .progamer .professores {
+      width: 514px;
+      width: 689px;
+      position: relative;
+      margin-left: 20px;
+    }
+
+    main .progamer .professores img {
+      width: 521px;
+      height: 689px;
+    }
+
+    main .progamer .professores .card-professores {
+      width: 360px;
+      height: 440px;
+    }
+
+    main .noticias {
+      background-image: url(../assets/images/background-noticias-desktop.png);
+      height: 1500px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    main .noticias .block {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    main .noticias .block h2 {
+      font-size: 30px;
+    }
+
+    main .noticias .card-noticias {
+      width: 290px;
+    }
+
+    main .noticias .card-noticias p {
+      font-size: 13px;
+      width: 250px;
+
+    }
+
+    /* FOOTER */
+    footer {
+      background-image: url(../assets/images/backgroung_footer.png);
+      height: 528px;
+      display: flex;
+      align-items: center;
+    }
+
+    footer .footer-flex {
+      position: relative;
+      width: 100%;
+    }
+
+    footer .footer-flex .info {
+      position: absolute;
+      top: 0;
+      left: -5%;
+      width: 25%;
+    }
+
+    footer .footer-flex .info .logo-footer {
+      width: 197px;
+      height: 55px;
+    }
+
+    footer .footer-flex .info p {
+      width: 285px;
+      letter-spacing: 1px;
+    }
+
+    footer .midias-sociais-footer {
+      width: 200px;
+    }
+
+    footer .links-uteis {
+      position: absolute;
+      top: 0;
+      left: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25%;
+      height: 255px;
+    }
+
+    footer .local {
+      width: 25%;
+      position: absolute;
+      top: 0;
+      right: 25%;
+    }
+
+    footer .newsletter {
+      position: absolute;
+      top: 0;
+      right: -5%;
+      height: 230px;
+    }
+
+    footer .newsletter form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100px;
+    }
+
+    footer .newsletter .linha {
+      width: 290px;
+      height: 40px;
+    }
+
+    footer .newsletter input {
+      width: 290px;
+      height: 40px;
+    }
+
+    footer .newsletter button {
+      width: 290px;
+      height: 40px;
+    }
+
+    footer .copyrigth {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer .footer-flex .botao-topo {
+     top: 0;
+    }
+
+  }

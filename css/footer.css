@@ -1,0 +1,156 @@
+/* FOOTER */
+footer {
+    background-image: url(../assets/images/backgroung_footer-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1529px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .logo-footer {
+    width: 110px;
+    height: 34px;
+  }
+
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .info p {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    width: 333px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  footer .midias-sociais-footer {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  footer .midias-sociais-footer a {
+    text-decoration: none;
+  }
+
+  footer .links-uteis {
+    width: 345px;
+    height: 193px;
+    margin-bottom: 60px;
+    /* border: #F9AA01 3px solid; */
+  }
+
+  footer .links-uteis h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 30px;
+    width: 148px;
+    border-bottom: #F9AA01 2px solid;
+    margin-bottom: 30px;
+  }
+
+  footer .links-uteis span {
+    color: #F9AA01;
+    font-weight: bold;
+  }
+
+  footer .links-uteis a {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+
+  footer .local {
+    height: 272px;
+    margin-bottom: 60px;
+  }
+
+  footer .local h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 30px;
+    width: 117px;
+    border-bottom: #F9AA01 2px solid;
+    margin-bottom: 10px;
+  }
+
+  footer .local h3 {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 16px;
+    color: #F9AA01;
+  }
+
+  footer .local p {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  footer .newsletter {
+    margin-bottom: 50px;
+  }
+
+  footer .newsletter h1 {
+    font-family: 'Titillium-Web-Black';
+    font-size: 30px;
+    width: 140px;
+    border-bottom: #F9AA01 2px solid;
+    margin-bottom: 30px;
+  }
+
+  footer form input {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+  }
+
+  footer form input::placeholder {
+    color: white;
+  }
+
+  .linha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+  }
+
+  footer form button {
+    font-family: 'Titillium-Web-Bold';
+    font-size: 24px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+  }
+
+  footer .botao-topo {
+   position: absolute;
+   right: 0;
+   top: -40px;
+   
+  }
+
+  footer .copyrigth {
+    position: relative;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    width: 333px;
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+  }
